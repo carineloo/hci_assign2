@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: #CCDBDC;
+}
+
+.dropdowns {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.dropdown1 .btn, .dropdown2 .btn, .dropdown3 .btn {
+  padding: 20px;
+  width: 50rem;
+  height: 7rem;
+  position: absolute;
+}
+
+.dropdown1 .btn {
+  top: 40%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.dropdown2 .btn {
+  top: 60%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.dropdown3 .btn {
+  top: 80%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#logo {
+  position: fixed;
+  width: 8%;
+  top: 0;
+  left: 16px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -99,8 +99,6 @@ ul {
     position: fixed;
     top: 0px;
     right: 0.5rem;
-    //   display: inline-block;
-    //   vertical-align: middle;
     z-index: 20;
 }
 
@@ -183,18 +181,3 @@ ul {
     color: $contrast3;
     transition: 0.6s;
 }
-
-// @media (min-width: map-get($viewport_size, l)) {
-//   nav {
-//     padding: 3% 6%;
-//     background: #7eb4e2;
-//   }
-//   .mobile {
-//     display: none;
-//   }
-//   .desktop {
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: space-between;
-//   }
-// }

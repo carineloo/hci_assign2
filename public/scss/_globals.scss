@@ -7,38 +7,34 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
 }
 
 body {
     background-color: $blue1;
 }
 
-.dropdowns {
-    width:100vw;
-    height:100vh;
-    position: relative;
+.container1 {
+    margin-top: 15rem;
+    text-align: center;
 }
 
-.dropdown1 .btn, .dropdown2 .btn, .dropdown3 .btn {
+.dropdown {
+    padding: 2rem;
+}
+
+.btn {
+    font-size: 22px;
+    text-align: center;
     padding: 20px;
-    width: 50rem;
-    height: 7rem;
-    position: absolute;
+    width: 60rem;
+    height: 10rem;
+    background: $contrast3;
+    color: white;
+    border: 1px solid $blue3;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.dropdown1 .btn{
-    top: 40%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-}
-.dropdown2 .btn {
-    top: 60%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-}
-.dropdown3 .btn {
-    top: 80%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+.dropdown-menu.show {
+    width: 60rem;
+    padding: 10px;
 }

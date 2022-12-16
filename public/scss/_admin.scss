@@ -1,0 +1,129 @@
+.admin .dropdown-menu {
+    position: absolute;
+    top: 6rem !important;
+}
+
+.reported {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.reported p {
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 15px 20px;
+    margin: 0 0.5rem 1rem 0.5rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+}
+
+.priority {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.priority h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.priority p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.priority .row {
+    padding: 0.6rem 0 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.priority .col-sm {
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-top: 1rem;
+}
+
+.fill {
+    position: relative;
+    width: 50%;
+    padding: 1.8rem 0rem;
+    margin: 1rem;
+    border: 1px solid $blue4;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.empty {
+    display: inline-block;
+    height: 140px;
+    width: 155px;
+    margin: 5px;
+    padding: 1rem;
+    border: 1px solid black;
+    background: white;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
+.assign {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 15px 15px 0 15px;
+    margin-top: 15px;
+}
+
+.assign .row {
+    text-align: center;
+}
+
+.assign .col-sm {
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem 0.8rem;
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+#person {
+    width: 60px;
+}
+
+#tech-assign {
+    margin: 5px 0;
+}
+
+.assign input {
+    width: 50%;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    border: 1px solid gray;
+    border-style: solid;
+}
+
+#submit3 {
+    width: fit-content;
+    padding: 5px 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(57, 164, 57);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+}

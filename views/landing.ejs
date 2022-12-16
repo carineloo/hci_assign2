@@ -1,44 +1,226 @@
 <div class="nav">
-    <img src="/img/uea-logo.png" id="logo">
-    <!-- <img src="/img/settings.png" id="settings">
-    <img src="/img/chat.png" id="chat"> -->
+    <img tabindex="1" src="/img/uea-logo.png" id="logo">
+
+    <label tabindex="2" class="switch" >
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+
+    <img tabindex="3" src="/img/chat.png" id="chat">
+
+    <nav>
+        <a tabindex="4" class="menu__icon mobile"><span></span></a>
+        <ul class="menu mobile">
+            <li><a href="" class="menu__item">Profile</a></li>
+            <li><a href="" class="menu__item">Langauge</a></li>
+            <li><a href="" class="menu__item">Font Size</a></li>
+            <li><a href="" class="menu__item">Colour Contrast</a></li>
+            <li><a href="" class="menu__item">General Queries</a></li>
+            <li><a href="" class="menu__item">FAQ</a></li>
+            <li><a href="" class="menu__item">Help</a></li>
+        </ul>
+    </nav>
+
 </div>
 
+<div class="container1">
+    <!-- Student Dropdown-->
+    <div class="dropdown">
+        <button tabindex="5" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Student</span></button>
+        <ul class="dropdown-menu">
+            <!-- Select Building -->
+            <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Select Building <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="8" href="#">The Library</a></li>
+                    <li><a tabindex="9" href="#">UEA Shop</a></li>
+                    <li><a tabindex="10" href="#">The Campus Kitchen</a></li>
+                    <li><a tabindex="11" href="#">The Hive</a></li>
+                    <li><a tabindex="12" href="#">Thomas Paine Study Center</a></li>
+                    <li><a tabindex="13" href="#">Elizabeth Fry Building </a></li>
+                    <li><a tabindex="14" href="#">Julian Study Center</a></li>
+                </ul>
+            </li>
+            <!-- Select Room -->
+            <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Select Room <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="1" href="#">Cafe</a></li>
+                    <li><a tabindex="2" href="#">Toilets</a></li>
+                    <li><a tabindex="3" href="#">Study Area</a></li>
+                </ul>
+            </li>
+            <!-- Select Fault -->
+            <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Select Fault <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Clogged Sink</a></li>
+                    <li><a href="#">Clogged Toilet</a></li>
+                    <li><a href="#">Broken Chair</a></li>
+                    <li><a href="#">Broken Table</a></li>
+                    <li><a href="#">Broken Sockets</a></li>
+                </ul>
+            </li>
 
-<div class="dropdowns">
-    <div class="dropdown1">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Student
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-        </div>
+            <!-- Other button -->
+            <div class="other">
+                <button id="formbtn">Other</button>
+            </div>
+
+            <!-- submit button -->
+            <div class="submit">
+                <form action="/" onsubmit="myFunction()">
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </ul>
+        <!-- Other form -->
+        <form action="/" id="form" onsubmit="myFunction2()">
+            <div class="row">
+                <div class="col">
+                    <label>Enter Building: </label><br> 
+                    <i class='audio fas fa-microphone' style='font-size:20px'></i>
+                    <input type="text"  id="fname" required><br>
+                    <label>Enter Room: </label><br>
+                    <i class='audio fas fa-microphone' style='font-size:20px'></i>
+                    <input type="text" id="lname" required><br>
+                    <label>Enter Fault: </label><br>
+                    <i class='audio fas fa-microphone' style='font-size:20px'></i>
+                    <input type="text" id="lname2" required><br>
+                </div>
+                <div class="col">
+                    <label>Additional Info (Optional): </label><br>
+                    <i class='audio fas fa-microphone' style='font-size:20px'></i>
+                    <input type="text" id="lname3" required>
+                    <label>Select Image (Optional):</label><br>
+                    <input type="file" id="myFile" name="filename" style='font-size:15px'>  
+                </div>
+            </div>
+                  
+            <!-- submit button -->
+            <div class="submit">
+                <input id="submit2" type="submit" value="Submit">
+            </div>
+        </form>
     </div>
 
-    <div class="dropdown2">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Admin
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-        </div>
+    <!-- Admin Dropdown-->
+    <div class="admin dropdown">
+        <button tabindex="6" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Admin</button>
+        <ul class="dropdown-menu">
+            <div class="reported">
+                <h4>Reported Faults:</h4>
+                <p class="fill" draggable="true">A</p>
+                <p class="fill" draggable="true">B</p>
+                <p class="fill" draggable="true">C</p>
+                <p class="fill" draggable="true">D</p>
+                <p class="fill" draggable="true">E</p>
+            </div>
+            <div class="priority">
+                <h4>Set Priority:</h4>
+                <p class="notepriority">High to Low: (1-3)</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm empty">
+                            High (1):
+                        </div>
+                        <div class="col-sm empty">
+                            Mid (2):
+                        </div>
+                        <div class="col-sm empty">
+                            Low (3):
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="assign">
+                <h4>Assign to Technicians:</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="/img/person.png" id="person">
+                            <p>...</p>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                        </div>
+                        <div class="col-sm">
+                            <img src="/img/person.png" id="person">
+                            <p>Hayden Warner</p>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                        </div>
+                        <div class="col-sm">
+                            <img src="/img/person.png" id="person">
+                            <p>...</p>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                        </div>
+                        <div class="col-sm">
+                            <img src="/img/person.png" id="person">
+                            <p>...</p>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                            <input type="text" id="tech-assign"><br>
+                        </div>
+                    </div>
+                    <!-- submit button -->
+                    <div class="submit">
+                        <form action="/" onsubmit="myFunction3()">
+                            <input id="submit3" type="submit" value="Save">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </ul>
     </div>
 
-    <div class="dropdown3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Technician
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-        </div>
+    <div class="technicians dropdown">
+        <button tabindex="7" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Technician</button>
+        <ul class="dropdown-menu">
+            <div class="status-border">
+                <p><span class="bold">Role:</span> Water Technician</p>
+                <p><span class="bold">Assigned:</span> Clogged Sink</p>
+                <p><span class="bold">Building:</span> The Hive</p>
+                <p><span class="bold">Room:</span> Toilet</p>
+                <p><span class="bold">Priority:</span> 1</p>
+                <p><span class="bold">Time Reported:</span> 11:30am 22/11/2022</p>
+
+                <form action="/">
+                    <label>Select Image (Optional):</label><br>
+                    <input type="file" id="myFile" name="filename">
+                </form>
+
+                <form class="status">
+                    <p<span class="bold">Mark Status:</span></p>
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">In progress</label><br>
+                        <input type="radio" id="age2" name="age" value="60">
+                        <label for="age2">Further work needed</label><br>
+                        <input type="radio" id="age3" name="age" value="100">
+                        <label for="age3">Completed</label><br>
+                </form>
+
+                <div class="status-person">
+                    <img src="/img/person.png" id="per">
+                    <p>Hayden Warner</p>
+                    <span id="wrench" class="glyphicon glyphicon-wrench"></span>
+                </div>
+
+                <div class="request">
+                    <button>Request Help</button>
+                </div>
+
+            </div>
+            <!-- submit button -->
+            <div class="submit">
+                <form action="/" onsubmit="myFunction3()">
+                    <input id="submit4" type="submit" value="Save">
+                </form>
+            </div>
+        </ul>
     </div>
 </div>

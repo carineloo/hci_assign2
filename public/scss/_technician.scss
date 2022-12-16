@@ -1,0 +1,58 @@
+.status-border{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.status {
+    position: absolute;
+    right: 20px;
+    top: 10rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+#per {
+    width: 80px;
+    position: absolute;
+    top: -105px;
+    right: -30px;
+}
+
+.status-person p {
+    position: absolute;
+    top: -85px;
+    right: 35px;
+}
+
+#wrench {
+    position: absolute;
+    top: -59px;
+    right: 85px;
+}
+
+.request button {
+    border: 1px solid rgb(243, 161, 40);
+    border-radius: 2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0.5rem 2rem;
+    margin: 1.2rem 0 1.2rem 0;
+    text-align: center;
+    background: white;
+}
+
+#submit4 {
+    width: fit-content;
+    padding: 5px 1rem;
+    margin-top: 1rem;
+    background-color: rgb(57, 164, 57);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+}
